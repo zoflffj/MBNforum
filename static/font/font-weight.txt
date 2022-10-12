@@ -1,0 +1,9 @@
+font-weight 
+
+Thin = 100
+Light = 300
+DemiLight = 350
+Regular = 400
+Medium = 500
+Bold = 700
+Black = 900

@@ -1,0 +1,349 @@
+
+/*---------- 에디터 // 필요 없을 시 삭제! --------------------------------------------------------------------------------*/
+.editor {
+  font-size: 16px;
+}
+.editor > div {
+  white-space: pre-line;
+}
+.editor table {
+  width: 100%;
+  border-color: gray;
+}
+.editor table td {
+  border: 1px solid gray;
+  padding: 5px;
+  min-height: 25px;
+}
+.editor p {
+  font-size: inherit;
+  text-align: left;
+  word-break: break-word;
+}
+.editor sub,
+.editor sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+.editor sub {
+  bottom: -0.25em;
+}
+.editor sup {
+  top: -0.5em;
+}
+.editor a {
+  display: inline;
+  color: royalblue;
+  text-decoration: underline;
+}
+.editor img {
+  display: inline;
+  width: auto;
+  max-width: 100%;
+}
+.editor ol,
+.editor ul {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.editor li::before {
+  content: "";
+  display: inline-block;
+  white-space: nowrap;
+  width: 1.2em;
+}
+.editor li:not(.ql-direction-rtl) {
+  padding-left: 1.5em;
+}
+.editor li.ql-direction-rtl {
+  padding-right: 1.5em;
+}
+.editor li:not(.ql-direction-rtl)::before {
+  margin-left: -1.5em;
+  margin-right: 0.3em;
+  text-align: right;
+}
+.editor li.ql-direction-rtl::before {
+  margin-left: 0.3em;
+  margin-right: -1.5em;
+  text-align: left;
+}
+.editor ul li::before {
+  content: "•";
+}
+.editor ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-0;
+}
+.editor ol li::before {
+  content: counter(list-0, decimal) ". ";
+}
+.editor ol li.ql-indent-1 {
+  counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-1;
+}
+.editor ol li.ql-indent-1::before {
+  content: counter(list-1, lower-alpha) ". ";
+}
+.editor ol li.ql-indent-2 {
+  counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-2;
+}
+.editor ol li.ql-indent-2::before {
+  content: counter(list-2, lower-roman) ". ";
+}
+.editor ol li.ql-indent-3 {
+  counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-3;
+}
+.editor ol li.ql-indent-3::before {
+  content: counter(list-3, decimal) ". ";
+}
+.editor ol li.ql-indent-4 {
+  counter-reset: list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-4;
+}
+.editor ol li.ql-indent-4::before {
+  content: counter(list-4, lower-alpha) ". ";
+}
+.editor ol li.ql-indent-5 {
+  counter-reset: list-6 list-7 list-8 list-9;
+  counter-increment: list-5;
+}
+.editor ol li.ql-indent-5::before {
+  content: counter(list-5, lower-roman) ". ";
+}
+.editor ol li.ql-indent-6 {
+  counter-reset: list-7 list-8 list-9;
+  counter-increment: list-6;
+}
+.editor ol li.ql-indent-6::before {
+  content: counter(list-6, decimal) ". ";
+}
+.editor ol li.ql-indent-7 {
+  counter-reset: list-8 list-9;
+  counter-increment: list-7;
+}
+.editor ol li.ql-indent-7::before {
+  content: counter(list-7, lower-alpha) ". ";
+}
+.editor ol li.ql-indent-8 {
+  counter-reset: list-9;
+  counter-increment: list-8;
+}
+.editor ol li.ql-indent-8::before {
+  content: counter(list-8, lower-roman) ". ";
+}
+.editor ol li.ql-indent-9 {
+  counter-increment: list-9;
+}
+.editor ol li.ql-indent-9::before {
+  content: counter(list-9, decimal) ". ";
+}
+.editor blockquote {
+  font-size: 20px;
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.editor code,
+.editor pre {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+.editor code {
+  font-size: 85%;
+  padding: 2px 4px;
+}
+.editor pre {
+  white-space: pre-wrap;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+.editor pre.ql-syntax {
+  background-color: #23241f;
+  color: #f8f8f2;
+  overflow: visible;
+}
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6 {
+  font-weight: bold;
+}
+.editor h1 {
+  font-size: 2em;
+}
+.editor h2 {
+  font-size: 1.5em;
+}
+.editor h3 {
+  font-size: 1.17em;
+}
+.editor h4 {
+  font-size: 1em;
+}
+.editor h5 {
+  font-size: 0.83em;
+}
+.editor h6 {
+  font-size: 0.67em;
+}
+.editor i,
+.editor em {
+  font-style: italic;
+}
+.editor .ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+.editor .ql-indent-1:not(.ql-direction-rtl) {
+  padding-left: 3em;
+}
+.editor .ql-indent-2:not(.ql-direction-rtl) {
+  padding-left: 6em;
+}
+.editor .ql-indent-3:not(.ql-direction-rtl) {
+  padding-left: 9em;
+}
+.editor .ql-indent-4:not(.ql-direction-rtl) {
+  padding-left: 12em;
+}
+.editor .ql-indent-5:not(.ql-direction-rtl) {
+  padding-left: 15em;
+}
+.editor .ql-indent-6:not(.ql-direction-rtl) {
+  padding-left: 18em;
+}
+.editor .ql-indent-7:not(.ql-direction-rtl) {
+  padding-left: 21em;
+}
+.editor .ql-indent-8:not(.ql-direction-rtl) {
+  padding-left: 24em;
+}
+.editor .ql-indent-9:not(.ql-direction-rtl) {
+  padding-left: 27em;
+}
+.editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+  padding-right: 3em;
+}
+.editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+  padding-right: 6em;
+}
+.editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+  padding-right: 9em;
+}
+.editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+  padding-right: 12em;
+}
+.editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+  padding-right: 15em;
+}
+.editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+  padding-right: 18em;
+}
+.editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+  padding-right: 21em;
+}
+.editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+  padding-right: 24em;
+}
+.editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+  padding-right: 27em;
+}
+.editor .ql-size-small {
+  font-size: 0.75em;
+}
+.editor .ql-size-large {
+  font-size: 1.5em;
+}
+.editor .ql-size-huge {
+  font-size: 2.5em;
+}
+.editor .ql-font-serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+.editor .ql-font-monospace {
+  font-family: Monaco, Courier New, monospace;
+}
+.editor .ql-align-center {
+  text-align: center;
+}
+.editor .ql-align-justify {
+  text-align: justify;
+}
+.editor .ql-align-right {
+  text-align: right;
+}
+.editor .ql-bg-black {
+  background-color: #000;
+}
+.editor .ql-bg-red {
+  background-color: #e60000;
+}
+.editor .ql-bg-orange {
+  background-color: #f90;
+}
+.editor .ql-bg-yellow {
+  background-color: #ff0;
+}
+.editor .ql-bg-green {
+  background-color: #008a00;
+}
+.editor .ql-bg-blue {
+  background-color: #06c;
+}
+.editor .ql-bg-purple {
+  background-color: #93f;
+}
+.editor .ql-color-white {
+  color: #FFFFFF;
+}
+.editor .ql-color-red {
+  color: #e60000;
+}
+.editor .ql-color-orange {
+  color: #f90;
+}
+.editor .ql-color-yellow {
+  color: #ff0;
+}
+.editor .ql-color-green {
+  color: #008a00;
+}
+.editor .ql-color-blue {
+  color: #06c;
+}
+.editor .ql-color-purple {
+  color: #93f;
+}
+.editor .ql-video {
+  display: block;
+  max-width: 100%;
+}
+.editor .ql-video.ql-align-right {
+  margin: 0 0 0 auto;
+}
+.editor .ql-video.ql-align-center {
+  margin: 0 auto;
+}
+
+/*----------유튜브--------------------------------------------------------------------------------*/
+
+iframe,
+object,
+embed {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+/** 서비스 안내 swiper **/
+.sv_slide .sv_slide_ul .sv_slide_li {
+  max-width: none !important;
+}

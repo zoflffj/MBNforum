@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*font*/
+
+/*노토산스 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --pt-txt-color: null;
+  --pt-bg-color: null;
+  --progress-percent: null;
+  --party-guide-bg: null;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 350;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900;
+}
+
+html {
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+  box-sizing: border-box;
+  overflow: scroll;
+  letter-spacing: -0.01em;
+  word-break: break-all;
+  color: #263238;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 358px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 376px) {
+  html {
+    font-size: 68.75%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: inherit;
+  letter-spacing: inherit;
+  word-break: inherit;
+  color: inherit;
+}
+
+button {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: none;
+}
+
+dl, ul, ol, li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+i, b, em, strong, address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+input, textarea, select {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+input:disabled, textarea:disabled, select:disabled {
+  opacity: 1;
+}
+
+label {
+  display: block;
+}
+
+input[type=checkbox], input[type=radio] {
+  display: none;
+}
+input[type=checkbox] + .label, input[type=radio] + .label {
+  display: inline-block;
+}
+input[type=search]::-webkit-search-cancel-button {
+  display: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+/*
+::-webkit-scrollbar {
+    $width: 12px;
+    width: $width;
+    &-track {
+        background-color: transparent;
+    }
+    &-thumb {
+        border-radius: $width;
+        border: 4px solid transparent;
+        background-color: #9999994d;
+        background-clip: padding-box;
+        &:hover {
+            background-color: #99999999;
+        }
+        &:active {
+            background-color: #999999;
+        }
+    }
+    &-button {
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        $width: 14px;
+        width: $width;
+        &-track {
+            background-color: transparent;
+        }
+        &-thumb {
+            border-radius: $width;
+            border: 3px solid transparent;
+            background-color: #6666664d;
+            background-clip: padding-box;
+            &:hover {
+                background-color: #66666699;
+            }
+            &:active {
+                background-color: #666666;
+            }
+        }
+        &-button {
+            display: none;
+        }
+    }
+}*/

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="static/css/common.css"> <!--기본 초기화 값-->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">   <!--어느 프로젝트에서든 많이 변하지 않는 값들-->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">  <!--각각의 style 값들-->
+    <script></script>
+    <title>title</title>
+</head>
+<body id="body" ontouchstart="">
+<!-- Main -->
+<main class="main">
+    <div class="tab">
+        <div class="inner">
+            <div class="btn-wrap">
+                <button class="on" onclick="classList.toggle('on')"><span>아이디 찾기</span></button>
+                <button onclick="classList.toggle('on')"><span>비밀번호 찾기</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <ul class="form-ul">
+            <li class="form-li">
+                <div class="form-ttl essen"> <!--필수값: essen-->
+                    <span>라벨</span>
+                </div>
+                <div class="form-in">
+                    <label class="label">
+                        <input type="text" placeholder="Appg">
+                    </label>
+                    <button>전송</button>
+                </div>
+                <div class="valid">유효성 체크 문구</div>
+            </li>
+            <li class="form-li">
+                <div class="form-ttl">
+                    <span>인증번호</span>
+                </div>
+                <div class="form-in timer">
+                    <label class="label">
+                        <input type="text" placeholder="인증번호">
+                        <span class="time">3:00</span>
+                    </label>
+                    <button>인증</button>
+                </div>
+            </li>
+            <li class="form-li">
+                <div class="form-in">
+                    <label class="label">
+                        <select>
+                            <option disabled selected hidden>선택</option><!--플레이스 홀더 같은 존재, 선택목록에서 제외됨-->>
+                            <option>text1</option>
+                            <option>text2</option>
+                        </select>
+                    </label>
+                    <button>전송</button>
+                </div>
+            </li>
+            <li class="form-li">
+                <div class="form-in">
+                    <label class="label">
+                        <textarea>Hello</textarea>
+                    </label>
+                </div>
+                <button>전송</button>
+            </li>
+            <li class="form-li">
+                <div class="chk-box">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="label">체크</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="label">체크</span>
+                    </label>
+                </div>
+                <div class="radio-box">
+                    <label class="radio">
+                        <input type="radio" name="radio" checked="">
+                        <span class="label">라디오</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="radio">
+                        <span class="label">라디오</span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <ol class="ol dot">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+    <ol class="ol dot-big">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+    <ol class="ol nb-dot">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+    <ol class="ol nb-bracket">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+    <ol class="ol nb-circle">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+    <ol class="ol dot-hangul">
+        <li class="ol-li"><span class="ol-txt">내용 길어져서 두 줄로 떨어질때 점 아래로 내려가지 않고 들여쓰기되어 보여짐</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+        <li class="ol-li"><span class="ol-txt">내용</span></li>
+    </ol>
+
+    <div class="btn-wrap">
+        <button class="btn disabled">버튼</button>
+        <button class="btn">버튼</button>
+    </div>
+    <div class="btn-wrap">
+        <button class="btn bo">버튼</button>
+    </div>
+    <!--모바일 하단 고정
+    <div class="btn-wrap btm">
+        <button class="btn">버튼</button>
+    </div>
+    -->
+</main>
+<!-- //Main -->
+</body>
+</html>

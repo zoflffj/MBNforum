@@ -1,0 +1,137 @@
+/* 어느 작업에서나 복붙되어 사용되는 부분 // 거의 수정되지 않음 */
+
+.wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*--ol--*/
+.ol {
+  font-size: 1.6rem;
+}
+.ol-li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.ol-li::before {
+  flex: 0 0 auto;
+  content: "";
+  display: none;
+  counter-increment: custom-number;
+  margin-right: 0.5rem;
+  vertical-align: top;
+}
+.ol-txt {
+  flex: 1;
+}
+
+.ol.dot .ol-li::before {
+  content: "∙ ";
+  display: inline-block;
+}
+.ol.dot-big .ol-li::before {
+  content: "• ";
+  display: inline-block;
+}
+.ol.nb-dot .ol-li::before {
+  content: counter(custom-number) ".";
+  display: inline-block;
+}
+.ol.nb-bracket .ol-li::before {
+  content: counter(custom-number) ")";
+  display: inline-block;
+}
+.ol.nb-circle .ol-li::before {
+  display: inline-block;
+}
+.ol.nb-circle .ol-li:nth-child(1)::before {
+  content: "①";
+}
+.ol.nb-circle .ol-li:nth-child(2)::before {
+  content: "②";
+}
+.ol.nb-circle .ol-li:nth-child(3)::before {
+  content: "③";
+}
+.ol.nb-circle .ol-li:nth-child(4)::before {
+  content: "④";
+}
+.ol.nb-circle .ol-li:nth-child(5)::before {
+  content: "⑤";
+}
+.ol.nb-circle .ol-li:nth-child(6)::before {
+  content: "⑥";
+}
+.ol.nb-circle .ol-li:nth-child(7)::before {
+  content: "⑦";
+}
+.ol.nb-circle .ol-li:nth-child(8)::before {
+  content: "⑧";
+}
+.ol.nb-circle .ol-li:nth-child(9)::before {
+  content: "⑨";
+}
+.ol.nb-circle .ol-li:nth-child(10)::before {
+  content: "⑩";
+}
+.ol.nb-circle .ol-li:nth-child(11)::before {
+  content: "⑪";
+}
+.ol.nb-circle .ol-li:nth-child(12)::before {
+  content: "⑫";
+}
+.ol.nb-circle .ol-li:nth-child(13)::before {
+  content: "⑬";
+}
+.ol.nb-circle .ol-li:nth-child(14)::before {
+  content: "⑭";
+}
+.ol.nb-circle .ol-li:nth-child(15)::before {
+  content: "⑮";
+}
+.ol.dot-hangul .ol-li::before {
+  display: inline-block;
+}
+.ol.dot-hangul .ol-li:nth-child(1)::before {
+  content: "가.";
+}
+.ol.dot-hangul .ol-li:nth-child(2)::before {
+  content: "나.";
+}
+.ol.dot-hangul .ol-li:nth-child(3)::before {
+  content: "다.";
+}
+.ol.dot-hangul .ol-li:nth-child(4)::before {
+  content: "라.";
+}
+.ol.dot-hangul .ol-li:nth-child(5)::before {
+  content: "마.";
+}
+.ol.dot-hangul .ol-li:nth-child(6)::before {
+  content: "바.";
+}
+.ol.dot-hangul .ol-li:nth-child(7)::before {
+  content: "사.";
+}
+.ol.dot-hangul .ol-li:nth-child(8)::before {
+  content: "아.";
+}
+.ol.dot-hangul .ol-li:nth-child(9)::before {
+  content: "자.";
+}
+.ol.dot-hangul .ol-li:nth-child(10)::before {
+  content: "차.";
+}
+.ol.dot-hangul .ol-li:nth-child(11)::before {
+  content: "카.";
+}
+.ol.dot-hangul .ol-li:nth-child(12)::before {
+  content: "타.";
+}
+.ol.dot-hangul .ol-li:nth-child(13)::before {
+  content: "파.";
+}
+.ol.dot-hangul .ol-li:nth-child(14)::before {
+  content: "하.";
+}
