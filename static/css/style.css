@@ -540,14 +540,6 @@
   background-color: rgba(0, 0, 0, 0);
 }
 /*--버튼 UI--*/
-.btn {
-  padding: 12px;
-  background: #246FFF;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 10px;
-}
 .btn-wrap {
   display: flex;
   align-items: center;
@@ -564,18 +556,9 @@
   padding: 16px;
   height: 56px;
 }
-.btn.bo {
-  background: #FFFFFF;
-  border: 1px solid #246FFF;
-  color: #246FFF;
-}
-.btn.disabled {
-  background: #ECEFF1;
-  color: #CFD8DC;
-}
 
 .btn-more{
-  padding: 4px 10px;
+  padding: 4px 16px;
   position: relative;
   display: block;
   overflow: hidden;
@@ -586,7 +569,7 @@
   transition: 0.3s;
 }
 .btn-more:hover, .btn-more:active{
-  box-shadow:inset 65px 0 0 0 #000000;
+  box-shadow:inset 100px 0 0 0 #000000;
   color: #FFFFFF;
 }
 
@@ -617,7 +600,7 @@
 }
 .bx-wrapper{
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1280px !important;
   width: 100%;
   -webkit-box-shadow: unset!important;
   box-shadow: unset!important;
@@ -631,6 +614,17 @@
   background: #ECEFF1!important;
 }
 
+/*--슬라이드 Type--*/
+.type-controls .bx-controls-direction{
+  display: none !important;
+}
+.type-pager .bx-wrapper .bx-viewport{
+  max-width: calc( 100% - 100px);
+  margin: 0 auto;;
+}
+.type-pager .bx-pager{
+  display: none !important;
+}
 /*--슬라이드 pager--*/
 .bx-wrapper .bx-pager{
   display: flex;
@@ -654,19 +648,21 @@
 
 .bx-controls-direction{
   position: absolute;
-  right: 6px;
-  bottom: 16px;
+  transform: translate(0, -50%);top: 50%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
+  z-index: 0;
 }
 .bx-wrapper .bx-controls-direction a {
   position: unset!important;
   top: unset!important;
   margin-top: 0!important;
-  margin-right: 10px;
   width: 32px!important;
   height: 32px!important;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 10;
 }
 /* 슬라이드 화살표 */
 .bx-wrapper .bx-prev {
@@ -691,7 +687,7 @@
 }
 .section-ttl{
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 700;
 }
 .explain-box{
@@ -706,6 +702,7 @@
 
 /*--------------------- ✨ D-day 카운트다운 ✨-----------------------*/
 .count-wrap{
+  padding: 80px 0;
   background: #3CAD6B;
   text-align: center;
   width: 100%;
@@ -744,6 +741,27 @@
   margin-right: 0;
 }
 
+/*--------------------- ✨ 소식 ✨-----------------------*/
+.notice-box .notice-li{
+  cursor: pointer;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9F9F9F;
+}
+.notice-box .notice-li:hover{
+
+}
+.notice-box .notice-li:first-child{
+  /*padding-top: 0;*/
+}
+.notice-box .notice-li:last-child{
+  border-bottom: 0;
+}
+.notice-box .notice-li .date{
+  font-size: 16px;
+}
 /*--------------------- ✨ 푸터 ✨-----------------------*/
 footer{
   width: 100%;
@@ -769,9 +787,6 @@ footer .footer-inner .logo-wrap img{
 footer .footer-inner .company-info{
   margin: 30px 0 0 30px;
   width: 100%;
-}
-footer .footer-inner .company-info b{
-  font-weight: 700;
 }
 footer .footer-inner .company-info .copyright{
   margin-top: 50px;

@@ -15,7 +15,7 @@
     <title>title</title>
 </head>
 <body id="body" ontouchstart="">
-<!-- Header -->
+<!-------------- ✨ Header ✨-------------->
 <header class="header">
     <!-- 로고, 서비스메뉴 -->
     <div class="head">
@@ -30,7 +30,7 @@
             </nav>
         </div>
     </div>
-    <!-- GNB, Favorite menu -->
+    <!-- GNB menu -->
     <div class="gnb pc-view">
         <div class="gnb-inner">
             <nav class="nav-gnb">
@@ -47,23 +47,23 @@
             <div class="lnb">
                 <div class="lnb-inner">
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">ABOUT</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">ABOUT</h2> <!-- 📝 display: none; 처리 되어있어 보이지 않음-->
                     </nav>
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">PROGRAM</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">PROGRAM</h2> <!-- 📝 display: none; 처리 되어있어 보이지 않음-->
                     </nav>
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">HERO & SPEAKER</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">HERO & SPEAKER</h2> <!-- 📝display: none; 처리 되어있어 보이지 않음-->
                     </nav>
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">REGISTRATION</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">REGISTRATION</h2> <!-- 📝display: none; 처리 되어있어 보이지 않음-->
                         <ul>
                             <li><a href="">등록하기</a></li>
                             <li><a href="">등록확인</a></li>
                         </ul>
                     </nav>
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">ARCHAIVE</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">ARCHAIVE</h2> <!-- 📝display: none; 처리 되어있어 보이지 않음-->
                         <ul>
                             <li><a href="">히스토리</a></li>
                             <li><a href="">지난연사</a></li>
@@ -73,7 +73,7 @@
                         </ul>
                     </nav>
                     <nav class="nav-lnb">
-                        <h2 class="nav-lnb-ttl">NOTICE</h2> <!--display: none; 처리 되어있어 보이지 않음-->
+                        <h2 class="nav-lnb-ttl">NOTICE</h2> <!-- 📝display: none; 처리 되어있어 보이지 않음-->
                         <ul>
                             <li><a href="">공지사항</a></li>
                             <li><a href="">이벤트</a></li>
@@ -86,7 +86,7 @@
 </header>
 <!--// Header -->
 
-<!-- Main -->
+<!-------------- ✨ Main ✨-------------->
 <main class="main">
     <!-- Visual -->
 <!--    <section>-->
@@ -100,6 +100,7 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
+
     <section>
         <!-- Count -->
         <div class="count-wrap">
@@ -115,7 +116,7 @@
     </section>
     <section>
         <!-- Swiper -->
-        <div class="slider-wrap section-inner">
+        <div class="slider-wrap section-inner type-controls"> <!-- 📝 Slide type: type-pager, type-controls-->
             <div class="slider">
                 <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
                 <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
@@ -148,16 +149,53 @@
         <!-- NoticeSection -->
         <div class="notice-section-wrap">
             <div class="notice-section section-inner">
-                <h3 class="section-ttl">VIDEO</h3>
-                <div class="explain-box">
-                    <p>지난 Y 포럼의 생생한 순간을 영상으로 만나보세요.</p>
+                <h3 class="section-ttl">NOTICE</h3>
+                <div class="explain-box" style="margin-bottom: 20px;"> <!-- 📝 style 값 꼭 넣어주세요 ^0^! -->
+                    <p>잠깐, <b>소식이 있어요!</b></p>
                     <button class="btn-more"><a href="#">More +</a></button>
                 </div>
-                <div class="video-box">
-                    <iframe src="https://www.youtube.com/embed/oaIJNOqY1oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/cMHXFKAN6Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe src="https://www.youtube.com/embed/rkahDTKglzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <ul class="notice-box">
+                    <li class="notice-li btn">
+                        <ol class="ol dot-big">
+                            <li class="ol-li"><span class="ol-txt">[MYF 2022] 온라인 참가 등록자 경품 증정 이벤트</span></li>
+                        </ol>
+                        <p class="date">2022-10-12</p>
+                    </li>
+                    <li class="notice-li btn">
+                        <ol class="ol dot-big">
+                            <li class="ol-li"><span class="ol-txt">[MYF 2022] 온라인 참가 등록자 경품 증정 이벤트</span></li>
+                        </ol>
+                        <p class="date">2022-10-12</p>
+                    </li>
+                    <li class="notice-li btn">
+                        <ol class="ol dot-big">
+                            <li class="ol-li"><span class="ol-txt">[MYF 2022] 온라인 참가 등록자 경품 증정 이벤트</span></li>
+                        </ol>
+                        <p class="date">2022-10-12</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--// NoticeSection -->
+    </section>
+    <section>
+        <!-- NoticeSection -->
+        <div class="notice-section-wrap">
+            <div class="notice-section section-inner">
+                <h3 class="section-ttl">SPONSER</h3>
+                <!-- Swiper -->
+                <div class="slider-wrap type-pager"> <!-- 📝 Slide type: type-pager, type-controls-->
+                    <div class="slider">
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                        <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
+                    </div>
                 </div>
+                <!--// Swiper -->
             </div>
         </div>
         <!--// NoticeSection -->
@@ -187,10 +225,10 @@
     </footer>
     <!--// Footer -->
 </main>
-<!--// Main -->
+<!-------------- //  Main -------------->
 </body>
 </html>
-
+<!-------------- ✨ Script ✨-------------->
 <script>
     //Count
     var dday = new Date("October 30, 2022, 0:00:00").getTime();
@@ -206,3 +244,4 @@
         document.getElementById("count").innerHTML = day + " : " + hour + " : " + min + " : " + sec;
     }, 1000);
 </script>
+<!-------------- //  Script -------------->
