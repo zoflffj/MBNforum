@@ -20,22 +20,6 @@ $( document ).ready( function() {
 } );
 //bx slider 끝
 
-var prevScrollpos = window.pageYOffset;
-
-window.onscroll = function () {
-  var header = document.getElementById('header');
-
-  if (window.innerWidth < 1400) {
-    if (window.pageYOffset > 2) {
-      header.classList.add('header--scrolled');
-    } else {
-      header.classList.remove('header--scrolled');
-    }
-  }
-};
-// 스크롤 따라 헤더의 디자인 변화(클래스로 다른 디자인 설정해두어야 함)
-
-
 function openPopup() {
   var popup = document.getElementsByClassName('popup')[0];
 
@@ -79,14 +63,4 @@ function tabtoggle(){
 }
 //탭 토글
 
-const search_label = document.querySelector('.label.search');
-const search_input = document.querySelector('.label.search > input');
-
-search_input.onfocus = function(e) {
-  search_label.classList.add('on');
-}
-search_input.onblur = function(e) {
-  search_label.classList.remove('on');
-}
-//포커스시 검색창 옵션 변경
 

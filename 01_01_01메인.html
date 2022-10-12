@@ -18,7 +18,7 @@
 <!-- Header -->
 <header class="header">
     <!-- 로고, 서비스메뉴 -->
-    <section class="head">
+    <div class="head">
         <div class="head-inner">
             <h1 class="logo"><a href=""><img src="static/images/main_logo.png" alt="MBN FORUM"></a></h1>
             <nav class="head-nav">
@@ -29,9 +29,9 @@
                 <button class="menu mobile-view"><i class="i-menu"></i></button>
             </nav>
         </div>
-    </section>
+    </div>
     <!-- GNB, Favorite menu -->
-    <section class="gnb pc-view">
+    <div class="gnb pc-view">
         <div class="gnb-inner">
             <nav class="nav-gnb">
                 <ul class="nav-gnb-menu">
@@ -44,7 +44,7 @@
                 </ul>
             </nav>
             <!-- Sub Menu -->
-            <section class="lnb">
+            <div class="lnb">
                 <div class="lnb-inner">
                     <nav class="nav-lnb">
                         <h2 class="nav-lnb-ttl">ABOUT</h2> <!--display: none; 처리 되어있어 보이지 않음-->
@@ -80,17 +80,17 @@
                         </ul>
                     </nav>
                 </div>
-            </section>
+            </div>
         </div>
-    </section>
+    </div>
 </header>
 <!--// Header -->
 
 <!-- Main -->
 <main class="main">
     <!-- Visual -->
-    <section>
-        <!-- Main-top -->
+<!--    <section>-->
+<!--        &lt;!&ndash; Main-top &ndash;&gt;-->
 <!--        <div class="main-top">-->
 <!--            <div class="left-box">-->
 <!--                <img src="static/images/left-box-img.svg" alt="">-->
@@ -99,8 +99,7 @@
 
 <!--            </div>-->
 <!--        </div>-->
-        <!--// Main-top -->
-    </section>
+<!--    </section>-->
     <section>
         <!-- Count -->
         <div class="count-wrap">
@@ -116,7 +115,7 @@
     </section>
     <section>
         <!-- Swiper -->
-        <div class="slider-wrap">
+        <div class="slider-wrap section-inner">
             <div class="slider">
                 <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
                 <div><img src="https://via.placeholder.com/1080x700/.png" alt="이미지 설명"></div>
@@ -130,7 +129,7 @@
     <section>
         <!-- videoSection -->
         <div class="video-section-wrap">
-            <div class="video-section">
+            <div class="video-section section-inner">
                 <h3 class="section-ttl">VIDEO</h3>
                 <div class="explain-box">
                     <p>지난 Y 포럼의 생생한 순간을 영상으로 만나보세요.</p>
@@ -144,6 +143,24 @@
             </div>
         </div>
         <!--// videoSection -->
+    </section>
+    <section>
+        <!-- NoticeSection -->
+        <div class="notice-section-wrap">
+            <div class="notice-section section-inner">
+                <h3 class="section-ttl">VIDEO</h3>
+                <div class="explain-box">
+                    <p>지난 Y 포럼의 생생한 순간을 영상으로 만나보세요.</p>
+                    <button class="btn-more"><a href="#">More +</a></button>
+                </div>
+                <div class="video-box">
+                    <iframe src="https://www.youtube.com/embed/oaIJNOqY1oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/cMHXFKAN6Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/rkahDTKglzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!--// NoticeSection -->
     </section>
     <!-- Footer -->
     <footer>
